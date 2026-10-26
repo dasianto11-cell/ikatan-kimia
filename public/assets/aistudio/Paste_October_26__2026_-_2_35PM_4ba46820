@@ -1,0 +1,1285 @@
+BUILD IONIC BOND LAB 3D — AN INTERACTIVE VIRTUAL CHEMISTRY LABORATORY
+
+Explore Electron Transfer, Ion Formation, and Ionic Crystal Structures
+
+Create a complete, immersive, interactive educational website called IONIC BOND LAB 3D: Explore the World of Ionic Compounds for a high school chemistry presentation.
+
+The website must use Indonesian as its primary language, with accurate scientific terminology appropriate for students in kelas X SMA.
+
+MOST IMPORTANT DESIGN REQUIREMENT
+
+This website must look and feel like a cute, modern, fully illustrated virtual chemistry laboratory, not a conventional educational website filled with text cards.
+
+Students should feel as if they have entered a miniature chemistry laboratory where they can:
+
+Explore interactive 3D atomic models.
+
+Observe electron transfer between atoms.
+
+Watch atoms form positive and negative ions.
+
+Investigate the electrostatic attraction between oppositely charged ions.
+
+Build and rotate 3D ionic crystal lattices.
+
+Conduct virtual experiments with ionic compounds.
+
+Discover the uses of ionic compounds in everyday life.
+
+Complete interactive exercises and a chemistry challenge.
+
+Prioritize these features in this order:
+
+A visually rich virtual laboratory with recognizable laboratory equipment.
+
+Interactive 3D atomic models showing electron shells and valence electrons.
+
+An animated electron-transfer simulation with scientifically accurate ion formation.
+
+Interactive 3D ionic crystal lattice models.
+
+A virtual experiment investigating the properties of ionic compounds.
+
+Real-world applications illustrated with relevant images.
+
+Interactive exercises, explanations, and a 10-question quiz.
+
+Do not create a website that merely displays chemical formulas, emojis, generic cards, or paragraphs. Every major learning section must contain meaningful scientific visuals and functional interactions.
+
+Scientific principle: Ionic bonding is the electrostatic attraction between oppositely charged ions. Electron transfer is a useful model for explaining how ions form, but ionic solids are extended three-dimensional lattices, not collections of separate NaCl or MgO molecules.
+
+1. TECHNICAL IMPLEMENTATION
+
+Build a working, responsive web application using React and TypeScript if appropriate.
+
+Use:
+
+Three.js or React Three Fiber for 3D atomic models and ionic crystal lattices, if supported.
+
+SVG or CSS animations for electron shells, electron transfer, ion formation, and electrostatic attraction.
+
+High-quality illustrations or images for laboratory equipment and real-world applications.
+
+React state for selected atoms, electron-transfer stages, lattice construction, virtual experiments, and quiz scoring.
+
+Responsive layouts for mobile phones, tablets, laptops, and classroom projectors.
+
+If a 3D library cannot be installed, create a convincing alternative using SVG or CSS. Do not substitute plain chemical formulas for molecular or atomic visualizations.
+
+The application must not require a paid API, mandatory login, or an external API key.
+
+Do not depend on unverified external image URLs. Use available image assets, generated illustrations, or detailed SVG drawings with graceful fallbacks.
+
+All interactive controls must work on desktop and mobile.
+
+2. ART DIRECTION — A CUTE 3D SCIENCE LAB
+
+Visual concept
+
+Imagine a friendly chemistry laboratory from a high-quality educational animation.
+
+Use:
+
+Pastel mint green, warm cream, peach, soft blue, and teal.
+
+Rounded laboratory furniture and clean work surfaces.
+
+Detailed glassware with translucent liquids.
+
+Glass reflections, soft shadows, and gentle lighting.
+
+Three-dimensional atomic models with clearly distinguishable particles.
+
+Floating electron animations and subtle scientific decorations.
+
+A consistent scientist mascot wearing a lab coat and safety goggles.
+
+A visually engaging periodic table display.
+
+An interactive digital screen showing electron configurations and ion charges.
+
+The design should feel polished, playful, and immersive without looking childish or cluttered.
+
+Main laboratory scene
+
+The homepage should open into a large illustrated chemistry laboratory, not a plain title page.
+
+Include:
+
+A laboratory bench.
+
+Beakers and Erlenmeyer flasks.
+
+Test tubes in a rack.
+
+Reagent bottles containing ionic compound samples.
+
+A digital balance.
+
+A conductivity testing station.
+
+An interactive periodic table.
+
+A large 3D atomic model.
+
+A display showing an ionic crystal lattice.
+
+A virtual experiment station.
+
+A cartoon scientist standing beside the workbench.
+
+Shelves containing laboratory equipment.
+
+A laboratory window or scientific background.
+
+Make the equipment visually recognizable and arrange it naturally.
+
+Display the title:
+
+IONIC BOND LAB 3D
+
+Subtitle:
+
+Explore Atoms. Transfer Electrons. Discover Ionic Bonds.
+
+Provide two prominent buttons:
+
+ENTER THE LAB
+
+START LEARNING
+
+Clicking a workstation or laboratory object should open its corresponding activity.
+
+3. INTERACTIVE LABORATORY NAVIGATION
+
+Design the application as a collection of connected laboratory stations.
+
+Include these stations:
+
+Atomic Structure Station.
+
+Electron Transfer Station.
+
+Ionic Bond Formation Station.
+
+Ionic Crystal Lattice Station.
+
+Ionic Compounds Properties Station.
+
+Virtual Conductivity Experiment.
+
+Real-World Applications Gallery.
+
+Ionic Bond Challenge.
+
+Use a laboratory map or central laboratory scene with clickable workstations. Also provide a clear navigation menu for classroom presentations.
+
+When students select a workstation, show its dedicated interactive environment with smooth transitions.
+
+Each station should have its own visual identity. Do not make every section look like the same generic card layout.
+
+Display a progress indicator showing which stations students have explored.
+
+4. ATOMIC STRUCTURE STATION — EXPLORE VALENCE ELECTRONS
+
+Title: “Meet the Atoms!”
+
+Create an interactive atomic model viewer.
+
+Required elements
+
+Show the following elements:
+
+Sodium (Na), atomic number 11.
+
+Chlorine (Cl), atomic number 17.
+
+Magnesium (Mg), atomic number 12.
+
+Oxygen (O), atomic number 8.
+
+Calcium (Ca), atomic number 20.
+
+Fluorine (F), atomic number 9.
+
+Potassium (K), atomic number 19.
+
+Bromine (Br), atomic number 35.
+
+When students select an element, update the displayed atomic model.
+
+Atomic model requirements
+
+Show:
+
+The element symbol and name.
+
+Atomic number.
+
+Electron configuration.
+
+Number of electron shells.
+
+Number of valence electrons.
+
+A simplified Bohr model.
+
+The relationship between valence electrons and ion formation.
+
+Use these shell distributions for neutral atoms:
+
+Na: 2, 8, 1.
+
+Cl: 2, 8, 7.
+
+Mg: 2, 8, 2.
+
+O: 2, 6.
+
+Ca: 2, 8, 8, 2.
+
+F: 2, 7.
+
+K: 2, 8, 8, 1.
+
+Br: 2, 8, 18, 7.
+
+For electron configurations in subshell notation, use the correct ground-state configurations.
+
+Interactions
+
+Students should be able to:
+
+Rotate the atomic model.
+
+Zoom in and out.
+
+Select an electron to highlight it.
+
+Toggle shell labels.
+
+Toggle valence-electron highlighting.
+
+Compare two atoms side by side.
+
+Reset the model.
+
+Clearly explain that the Bohr model is a simplified educational representation and that electrons are not literally moving along fixed circular tracks in the modern quantum-mechanical model.
+
+Explanation panel
+
+Display:
+
+Element name and symbol.
+
+Atomic number.
+
+Electron configuration.
+
+Number of valence electrons.
+
+Typical ion formed in introductory ionic-bond examples.
+
+Why the element may gain or lose electrons.
+
+Examples:
+
+Sodium tends to lose one electron to form Na⁺.
+
+Chlorine tends to gain one electron to form Cl⁻.
+
+Magnesium tends to lose two electrons to form Mg²⁺.
+
+Oxygen tends to gain two electrons to form O²⁻.
+
+Clarify that these are common ion-formation patterns, not a universal rule for every chemical environment.
+
+5. ELECTRON TRANSFER STATION — WATCH ELECTRONS MOVE
+
+Title: “Where Do the Electrons Go?”
+
+This is one of the most important learning experiences.
+
+Create an interactive electron-transfer simulator with animated atomic models.
+
+Students must be able to select a metal and a nonmetal and observe a simplified electron-transfer process.
+
+Required simulation A: Sodium chloride
+
+Show a sodium atom beside a chlorine atom.
+
+Initial electron distributions:
+
+Na: 2, 8, 1.
+
+Cl: 2, 8, 7.
+
+When students press START ELECTRON TRANSFER:
+
+Highlight the single valence electron of sodium.
+
+Animate the electron moving from sodium to chlorine.
+
+Update sodium to Na⁺ with electron distribution 2, 8.
+
+Update chlorine to Cl⁻ with electron distribution 2, 8, 8.
+
+Display the charges of the resulting ions.
+
+Show the electrostatic attraction between Na⁺ and Cl⁻.
+
+Display the formula NaCl.
+
+Explain how the ions are arranged in an extended ionic lattice.
+
+Reaction-style representation:
+
+Na → Na⁺ + e⁻
+
+Cl + e⁻ → Cl⁻
+
+Overall electron-transfer equation:
+
+2Na + Cl₂ → 2NaCl
+
+For the single-pair visualization, make it clear that the animation represents the simplified formation of an Na⁺ and Cl⁻ ion pair rather than the complete macroscopic reaction.
+
+Required simulation B: Magnesium oxide
+
+Show magnesium and oxygen atoms.
+
+Initial electron distributions:
+
+Mg: 2, 8, 2.
+
+O: 2, 6.
+
+Animate two electrons transferring from Mg to O.
+
+Final states:
+
+Mg²⁺: 2, 8.
+
+O²⁻: 2, 8.
+
+Display:
+
+Mg → Mg²⁺ + 2e⁻
+
+O + 2e⁻ → O²⁻
+
+Overall equation:
+
+2Mg + O₂ → 2MgO
+
+Explain why the resulting ions have charges of +2 and −2 and combine in a 1:1 ratio in the empirical formula.
+
+Required simulation C: Calcium chloride
+
+Show one calcium atom and two chlorine atoms.
+
+Animate the transfer of one electron to each chlorine atom.
+
+Final ions:
+
+Ca²⁺.
+
+Two Cl⁻ ions.
+
+Display the formula:
+
+CaCl₂
+
+Explain why one Ca²⁺ ion requires two Cl⁻ ions to produce an electrically neutral ionic compound.
+
+Interaction controls
+
+Provide:
+
+SELECT ELEMENTS
+
+START TRANSFER
+
+PAUSE ANIMATION
+
+CONTINUE
+
+RESET
+
+SHOW ELECTRON CONFIGURATION
+
+EXPLAIN ION FORMATION
+
+The animation must respond to user interaction.
+
+Do not automatically play the entire sequence when the page loads.
+
+Scientific explanation
+
+Explain the difference between:
+
+Losing electrons.
+
+Gaining electrons.
+
+Forming cations.
+
+Forming anions.
+
+Electrostatic attraction.
+
+Forming an electrically neutral ionic compound.
+
+Do not imply that atoms transfer electrons simply because they want to complete an octet. Present the octet rule as a useful introductory model and explain that the stability of the resulting compound depends on the overall energetics of the system.
+
+6. IONIC BOND FORMATION STATION — BUILD THE CORRECT FORMULA
+
+Title: “Build an Ionic Compound!”
+
+Create an interactive workbench where students combine cations and anions to build electrically neutral ionic compounds.
+
+Interactive ion library
+
+Include:
+
+Cations:
+
+Na⁺.
+
+K⁺.
+
+Mg²⁺.
+
+Ca²⁺.
+
+Al³⁺.
+
+Anions:
+
+Cl⁻.
+
+Br⁻.
+
+F⁻.
+
+O²⁻.
+
+S²⁻.
+
+Each ion should be represented by a clearly labeled 3D sphere or ionic model.
+
+Use consistent colors, but also show each ion's name, symbol, and charge. Do not rely on color alone to communicate charge.
+
+Build-a-compound activity
+
+Allow students to drag or select ions and place them on a virtual balance.
+
+The system should calculate the total positive and negative charge.
+
+Example 1:
+
+Na⁺ + Cl⁻ → NaCl
+
+Total charge:
+
+(+1) + (−1) = 0
+
+Example 2:
+
+Mg²⁺ + 2Cl⁻ → MgCl₂
+
+Total charge:
+
+(+2) + 2(−1) = 0
+
+Example 3:
+
+2Al³⁺ + 3O²⁻ → Al₂O₃
+
+Total charge:
+
+2(+3) + 3(−2) = 0
+
+Example 4:
+
+Ca²⁺ + O²⁻ → CaO
+
+Total charge:
+
+(+2) + (−2) = 0
+
+Example 5:
+
+2K⁺ + S²⁻ → K₂S
+
+Total charge:
+
+2(+1) + (−2) = 0
+
+Functional requirements
+
+When students add or remove an ion:
+
+Update the number of selected ions.
+
+Calculate the total positive charge.
+
+Calculate the total negative charge.
+
+Display the net charge.
+
+Show whether the composition is electrically neutral.
+
+Generate the correct simplest empirical formula when valid.
+
+Explain how the ion ratio is determined.
+
+Include a RESET COMPOSITION button.
+
+Teach the criss-cross method as one possible shortcut, but emphasize that the fundamental principle is electrical neutrality and the simplest whole-number ratio.
+
+Clarify that subscripts in an ionic formula represent the ratio of ions in the compound, not necessarily separate molecules.
+
+7. IONIC CRYSTAL LATTICE STATION — EXPLORE THE 3D STRUCTURE
+
+Title: “Inside an Ionic Crystal!”
+
+Create a fully interactive 3D crystal lattice viewer.
+
+This is another major feature of the application.
+
+Required crystal models
+
+Include:
+
+Sodium chloride (NaCl).
+
+Magnesium oxide (MgO).
+
+Cesium chloride (CsCl), as an optional extension.
+
+The user must be able to select a crystal and see its structure change.
+
+Sodium chloride lattice
+
+Display a repeating three-dimensional arrangement of Na⁺ and Cl⁻ ions.
+
+Use alternating colors for positive and negative ions.
+
+Allow students to:
+
+Rotate the crystal in three dimensions.
+
+Zoom in and out.
+
+Highlight an individual ion.
+
+Display the ion symbol and charge.
+
+Toggle lattice connections or nearest-neighbor indicators.
+
+View a single unit cell.
+
+Expand the model into a larger lattice.
+
+Reset the camera.
+
+For the conventional rock-salt structure, explain that each Na⁺ has six nearest-neighbor Cl⁻ ions and each Cl⁻ has six nearest-neighbor Na⁺ ions.
+
+Magnesium oxide lattice
+
+Show the rock-salt-type lattice for MgO.
+
+Clearly label:
+
+Mg²⁺.
+
+O²⁻.
+
+Explain that MgO has a 1:1 empirical formula, even though its ions form an extended lattice.
+
+Optional cesium chloride model
+
+Show the CsCl-type structure and explain that its coordination arrangement differs from the NaCl structure.
+
+Do not present the CsCl structure as an NaCl-type lattice.
+
+Interactive learning task
+
+Ask students:
+
+“Why is sodium chloride represented by NaCl rather than Na₂Cl₂ or NaCl₂?”
+
+Let students choose an answer and receive immediate feedback.
+
+Explain the relationship between:
+
+Ion charges.
+
+The simplest ratio.
+
+Electrical neutrality.
+
+Repeating crystal structures.
+
+Do not draw arbitrary connections between ions and describe them as actual covalent bonds. Any lattice lines should be clearly identified as visual aids.
+
+8. IONIC COMPOUNDS PROPERTIES STATION
+
+Title: “How Do Ionic Compounds Behave?”
+
+Create a visually rich experimental bench with interactive comparisons.
+
+Divide the station into four investigations.
+
+A. Melting point
+
+Compare suitable ionic and molecular substances.
+
+Use an illustrative comparison such as:
+
+Sodium chloride: melting point approximately 801°C.
+
+Magnesium oxide: melting point approximately 2,852°C.
+
+Water: melting point approximately 0°C at standard atmospheric pressure.
+
+Clearly label these as reference values and explain that different substances have different structures and intermolecular or electrostatic interactions.
+
+Explain:
+
+Ionic solids contain ions held in a three-dimensional lattice.
+
+Considerable energy is generally needed to separate ions sufficiently for melting.
+
+Ionic compounds can have high melting points, although values vary considerably between compounds.
+
+Do not imply that every ionic compound has a higher melting point than every molecular substance.
+
+B. Electrical conductivity
+
+Show three interactive samples:
+
+Solid sodium chloride.
+
+Sodium chloride dissolved in water.
+
+Molten sodium chloride.
+
+When students select a sample, animate a conductivity tester.
+
+Expected results:
+
+Solid NaCl: does not conduct electricity effectively under ordinary conditions because its ions cannot move freely through the solid lattice.
+
+Aqueous NaCl: conducts because mobile ions carry charge through the solution.
+
+Molten NaCl: conducts because the ions are mobile in the liquid.
+
+Use a lamp or meter animation to indicate the conductivity result.
+
+Explain the difference between the presence of charged particles and their ability to move.
+
+C. Solubility
+
+Compare selected ionic compounds in water.
+
+Include examples such as:
+
+NaCl: soluble.
+
+KNO₃: soluble.
+
+AgCl: sparingly soluble.
+
+CaCO₃: sparingly soluble.
+
+Allow students to select a substance and observe an illustrative dissolution simulation.
+
+Explain that solubility depends on the balance of energetic and entropic factors, including interactions between ions and water molecules.
+
+Do not suggest that all ionic compounds dissolve readily in water.
+
+D. Mechanical properties
+
+Show a crystal model being subjected to a gentle conceptual force.
+
+Animate a shift between neighboring layers of ions. When like-charged ions become adjacent, show their electrostatic repulsion and the crystal's tendency to fracture.
+
+Explain why many ionic crystals are hard but brittle.
+
+Label this as a conceptual illustration rather than a simulation of exact atomic-scale mechanics.
+
+9. VIRTUAL CONDUCTIVITY LAB — MAIN INTERACTIVE EXPERIMENT
+
+Title: “Can Ionic Compounds Conduct Electricity?”
+
+Create a dedicated virtual laboratory scene with a recognizable workbench.
+
+Visible equipment
+
+Include:
+
+Three sample containers.
+
+A conductivity tester.
+
+Electrodes.
+
+Connecting wires.
+
+A battery or power supply.
+
+A light bulb or digital conductivity meter.
+
+A beaker of distilled water.
+
+A sample of solid sodium chloride.
+
+A sample of sodium chloride solution.
+
+A molten sodium chloride sample represented by a safe virtual heating station.
+
+Every major item must have a recognizable appearance and visible label.
+
+When the student clicks equipment, display its name and purpose.
+
+Experimental setup
+
+Students investigate three conditions:
+
+Experiment A: Solid sodium chloride.
+
+Experiment B: Aqueous sodium chloride.
+
+Experiment C: Molten sodium chloride.
+
+Provide these controls:
+
+SELECT SAMPLE
+
+START TEST
+
+PAUSE
+
+RESET EXPERIMENT
+
+VIEW PARTICLES
+
+EXPLAIN RESULTS
+
+Reaction and observation sequence
+
+When the student selects a sample and presses START TEST:
+
+Highlight the selected sample container.
+
+Animate the electrodes being connected to the sample.
+
+Show the ions or particles inside the sample.
+
+Activate the conductivity tester.
+
+Illuminate the lamp or update the meter according to the sample's conductivity.
+
+Display a brief observation.
+
+Ask the student to explain the result.
+
+Reveal a scientific explanation after the student's response.
+
+Expected results:
+
+Sample
+
+Conductivity
+
+Explanation
+
+Solid NaCl
+
+Very low under ordinary conditions
+
+Ions are fixed in the lattice
+
+Aqueous NaCl
+
+Conducts
+
+Ions can move through the solution
+
+Molten NaCl
+
+Conducts
+
+Ions are mobile in the liquid
+
+Clearly state that this is a digital simulation. The molten-salt activity is conceptual and must not be presented as a home experiment.
+
+Experiment log
+
+Create a log containing:
+
+Experiment name.
+
+Selected sample.
+
+Predicted result.
+
+Observed virtual result.
+
+Explanation.
+
+Completion status.
+
+Allow students to compare predictions with simulated observations.
+
+The RESET button must restore the initial state.
+
+Include a safety notice explaining that real conductivity experiments require appropriate equipment, supervision, and laboratory safety procedures.
+
+10. REAL-WORLD APPLICATIONS STATION — WHERE ARE IONIC COMPOUNDS USED?
+
+Title: “Ionic Compounds Around Us!”
+
+Use recognizable images or detailed illustrations, not only emojis or chemical formulas.
+
+Create a visually rich gallery arranged around a laboratory display shelf.
+
+A. Food and everyday materials
+
+Show:
+
+Table salt.
+
+Salt crystals.
+
+Packaged salt.
+
+Salt used in food preparation.
+
+Explain that sodium chloride is an ionic compound composed of Na⁺ and Cl⁻ ions in a crystal lattice.
+
+Clearly distinguish pure sodium chloride from commercial table salt, which may contain iodine compounds or other permitted additives.
+
+B. Fertilizers
+
+Show:
+
+Fertilizer granules.
+
+Fertilizer packaging.
+
+Agricultural crops.
+
+A laboratory sample of potassium nitrate or another suitable ionic fertilizer compound.
+
+Explain that many fertilizers contain ionic compounds that provide nutrients such as potassium, nitrate, ammonium, or phosphate.
+
+Use specific examples accurately. Do not imply that all fertilizers have the same composition.
+
+C. Construction materials
+
+Show:
+
+Limestone or calcium carbonate.
+
+Cement or concrete.
+
+A mineral sample.
+
+An illustration of calcium oxide or calcium carbonate in an appropriate industrial context.
+
+Explain that many minerals and construction-related materials contain ionic compounds, although cement and concrete are complex mixtures and materials.
+
+D. Ceramics and refractory materials
+
+Show:
+
+Ceramic tiles.
+
+A ceramic bowl.
+
+An industrial refractory lining.
+
+A magnesium oxide sample.
+
+Explain that certain ionic solids, including magnesium oxide, have high melting points and can be used in high-temperature applications.
+
+Clarify that actual material performance depends on composition, microstructure, and manufacturing.
+
+E. Batteries and electrochemical systems
+
+Show:
+
+A battery.
+
+An electrolyte illustration.
+
+A simplified ion-transport diagram.
+
+Explain that ions move through suitable electrolytes in many electrochemical systems.
+
+Distinguish ionic conduction through an electrolyte from electron conduction through an external circuit.
+
+Do not imply that every battery uses the same electrolyte or the same type of ionic compound.
+
+F. Water treatment and laboratory chemicals
+
+Show:
+
+A water-treatment illustration.
+
+A reagent bottle labeled sodium chloride or calcium chloride.
+
+A laboratory solution preparation scene.
+
+Explain selected uses of ionic compounds in laboratory and industrial processes.
+
+Product gallery interactions
+
+When a student clicks an application image, open an information panel containing:
+
+Application name.
+
+Relevant ionic compound.
+
+Chemical formula.
+
+The ions present.
+
+Explanation of the compound's function.
+
+A SHOW ION MODEL button.
+
+A RETURN TO GALLERY button.
+
+When SHOW ION MODEL is clicked, open the appropriate ion or crystal viewer.
+
+Do not imply that a complex commercial product contains only one chemical.
+
+Image requirements
+
+Use genuine visual variety:
+
+Salt crystals should look like crystals or grains.
+
+Fertilizer should look like granules or agricultural material.
+
+Construction materials should look like real building materials.
+
+Ceramics should look like ceramic objects.
+
+Batteries should be represented in a recognizable electrochemical context.
+
+Avoid reusing the same generic reagent bottle for every application.
+
+Do not rely on decorative icons when a real product image or detailed illustration is required.
+
+11. SCIENTIFIC VISUAL QUALITY
+
+All scientific illustrations must be consistent and readable.
+
+For atomic models
+
+Use correct atomic numbers.
+
+Use correct electron configurations.
+
+Distinguish protons, neutrons, and electrons if a nucleus is shown.
+
+Show valence electrons clearly.
+
+Represent electron transfer consistently.
+
+Label ions with their correct charges.
+
+For ion models
+
+Distinguish cations from anions.
+
+Display the correct charge.
+
+Use consistent labels and colors.
+
+Never rely on color alone to identify an ion.
+
+For ionic crystal models
+
+Use chemically appropriate lattice arrangements.
+
+Use correct ion ratios.
+
+Distinguish the unit cell from the full lattice.
+
+Avoid presenting ionic solids as collections of discrete molecules.
+
+Do not depict ionic attraction as an ordinary covalent bond.
+
+For scientific equations
+
+Use accurate formulas.
+
+Balance chemical equations.
+
+Use correct ionic charges.
+
+Ensure empirical formulas correspond to electrical neutrality.
+
+AI-generated illustrations may be used for the laboratory background, mascot, and general applications. However, atomic structures, electron configurations, chemical formulas, and crystal lattices must be generated separately using code or verified scientific models.
+
+12. QUIZ STATION — THE IONIC BOND CHALLENGE
+
+Title: “Can You Master Ionic Bonding?”
+
+Create exactly 10 questions.
+
+Question formats:
+
+Questions 1–3: True/False.
+
+Questions 4–7: Multiple Correct Answers (MCMA), with five options each.
+
+Questions 8–10: Essay questions.
+
+Total score: 20 points.
+
+Scoring:
+
+True/False: 1 point each = 3 points.
+
+MCMA: 2 points each = 8 points.
+
+Essay: 3 points each = 9 points.
+
+Total: 20 points.
+
+Content coverage
+
+Cover:
+
+Valence electrons.
+
+Cation and anion formation.
+
+Electron transfer.
+
+Ionic bonding.
+
+Electrical neutrality.
+
+Writing ionic formulas.
+
+Crystal lattice structures.
+
+Melting points and brittleness.
+
+Electrical conductivity.
+
+Real-world applications.
+
+Include at least one question requiring students to interpret a visual electron-transfer diagram and one question involving an ionic crystal structure.
+
+Functional requirements
+
+Include:
+
+Interactive answer controls.
+
+Progress indicator.
+
+Immediate feedback for objective questions.
+
+Explanations for correct answers.
+
+Final score screen.
+
+Review option.
+
+Retry button.
+
+For MCMA questions, clearly state whether students must select all correct answers. Define scoring transparently, including how partially correct responses are handled.
+
+For essay questions, provide:
+
+Model answers.
+
+A three-point self-assessment rubric for each question.
+
+Clear criteria for scientific accuracy and reasoning.
+
+Do not claim that essay responses are objectively graded using an unreliable keyword-only algorithm.
+
+Ensure all answer keys are scientifically correct and the total score is exactly 20 points.
+
+13. LEARNING REFLECTION STATION
+
+Title: “What Have You Discovered?”
+
+Create a short interactive reflection at the end of the laboratory tour.
+
+Ask students to complete these prompts:
+
+What happens to electrons when sodium forms Na⁺?
+
+Why does an ionic compound need to be electrically neutral?
+
+Why can aqueous sodium chloride conduct electricity while solid sodium chloride generally cannot?
+
+What is the difference between an ion pair and an extended ionic crystal lattice?
+
+Which laboratory station helped you understand ionic bonding most clearly, and why?
+
+Allow students to type their responses and display a summary of their learning progress.
+
+Provide a RESET REFLECTION button.
+
+Do not require students to create an account or submit personal information.
+
+14. USER EXPERIENCE AND ACCESSIBILITY
+
+The website must:
+
+Use Indonesian for explanations, labels, and instructions.
+
+Provide clear navigation between laboratory stations.
+
+Use accurate and age-appropriate scientific language.
+
+Include a progress indicator.
+
+Work on mobile devices and classroom projectors.
+
+Support mouse, keyboard, and touchscreen interactions where feasible.
+
+Include reset controls for experiments and models.
+
+Avoid excessive pop-ups.
+
+Use subtle animations without slowing down the application.
+
+Include text labels and accessible contrast.
+
+Provide a reduced-motion option if supported.
+
+Keep important formulas and diagrams readable on smaller screens.
+
+Ensure every button has a meaningful action.
+
+Do not allow visual effects to obscure scientific information.
+
+15. SUGGESTED APPLICATION STRUCTURE
+
+Organize the project into reusable components, for example:
+
+LaboratoryHome
+
+LaboratoryNavigation
+
+AtomicModelViewer
+
+ElectronTransferSimulator
+
+IonFormationPanel
+
+IonicFormulaBuilder
+
+CrystalLatticeViewer
+
+PropertiesInvestigation
+
+ConductivitySimulator
+
+ApplicationsGallery
+
+QuizStation
+
+LearningReflection
+
+Suggested asset organization:
+
+public/images/lab/
+
+public/images/equipment/
+
+public/images/mascot/
+
+public/images/ionic-compounds/
+
+public/images/applications/
+
+Use a clear data structure for elements, ions, compounds, electron configurations, crystal types, and quiz questions.
+
+Avoid duplicating scientific data across unrelated components.
+
+16. FINAL TESTING CHECKLIST
+
+Before finishing, verify:
+
+The homepage looks like an immersive laboratory.
+
+Laboratory equipment is recognizable.
+
+Atomic models display correct electron configurations.
+
+Electron-transfer animations respond to user interaction.
+
+Sodium, chlorine, magnesium, oxygen, calcium, and other selected elements form the correct ions.
+
+The application correctly distinguishes cations and anions.
+
+Ionic formulas reflect electrical neutrality.
+
+The formula builder updates dynamically.
+
+Crystal lattice models show appropriate ion arrangements.
+
+The NaCl and MgO structures are scientifically appropriate.
+
+Solid, aqueous, and molten NaCl have the correct simulated conductivity behavior.
+
+Application images correspond to their scientific explanations.
+
+All navigation and reset controls work.
+
+Exactly 10 quiz questions are present.
+
+Quiz scoring totals 20 points.
+
+Essay rubrics are transparent.
+
+The reflection station works.
+
+The website is responsive on mobile and desktop.
+
+There are no broken image assets or runtime errors.
+
+Scientific explanations consistently distinguish electron transfer, ion formation, electrostatic attraction, and crystal lattice structure.
+
+FINAL INSTRUCTION
+
+Build the working application, not just a plan or a visual mockup.
+
+Start by implementing:
+
+The immersive laboratory scene.
+
+The interactive atomic model viewer.
+
+The electron-transfer simulator.
+
+The ionic formula builder.
+
+The 3D ionic crystal lattice viewer.
+
+The virtual conductivity experiment.
+
+Then complete the properties station, applications gallery, quiz, and reflection activity.
+
+Prioritize scientific accuracy, meaningful visualizations, and functional interactions over decorative text cards.
+
+The finished result should feel like an interactive chemistry exhibit where students can explore ionic bonding through observation, experimentation, prediction, and scientific reasoning.
+
+Core learning message:
+
+“Memahami ikatan ionik bukan sekadar menghafal rumus kimia, tetapi menelusuri bagaimana ion terbentuk, bagaimana muatan diseimbangkan, dan bagaimana gaya elektrostatik menyusun materi di sekitar kita.”

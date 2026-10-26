@@ -1,0 +1,6 @@
+{
+  "name": "IONIC BOND LAB 3D: Laboratorium Virtual Ikatan Kimia",
+  "description": "Laboratorium virtual interaktif 3D untuk mempelajari transfer elektron, pembentukan ion, struktur kisi kristal, dan sifat senyawa ionik untuk kimia SMA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
